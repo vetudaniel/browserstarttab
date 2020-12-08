@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="nav-container">
+            <div class="nav">
+                <div class="nav-ul">
+                    <a href="https://www.youtube.com/" class="hover"><i class="fab fa-youtube fa-3x"></i></a>
+                    <a href="https://github.com/vetudaniel" class="hover"><i class="fab fa-github fa-3x"></i></a>
+                    <a href="https://mail.yahoo.com/" class="hover"><i class="fab fa-yahoo fa-3x"></i></a>
+                    <a href="https://mail.google.com/" class="hover"><i class="fab fa-google fa-3x"></i></a>
+                    <a href="https:linkedin.com/" class="hover"><i class="fab fa-linkedin fa-3x"></i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="center-content-container">
+            <h5 class="white">Hello</h5>
+            <h1 class="white headings" id="time"></h1>
+            <h4 class="white headings"id="date"></h4>
+            <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">         
+                <input  class="form-control search" id="search-box"name="q"  required="required"  type="text" placeholder="Google Search">
+                <input type="submit" id ="google-btn"value="search" >
+            </form>
+        </div>
+        <div class="quotes-container"></div>
+        <div class="weather-container white">
+            <p id="city">City</p>
+            <p id="condition">Condition</p>
+            <img id="icon" src="">
+            <p id="temperature">Temperature</p>
+        </div>
+        <div id = "right-content"class="weather-container white">
+            <a href="https://facebook.com/" class="hover"><i class="fab fa-facebook-square fa-3x"></i></a>
+            <a href="https://twitter.com/" class="hover"><i class="fab fa-twitter-square fa-3x"></i></a>
+            <a href="https://netflix.com" class="hover"><i class="fas fa-tv fa-3x"></i></a>
+            <a href="https://www.codecademy.com/learn" class="hover"><i class="fas fa-laptop-code fa-3x"></i></a>
+        </div>
+       
+    </div>
+    <script src="weather.js"></script>
+    <script src="ui.js"></script>
+</body>
+</html>
