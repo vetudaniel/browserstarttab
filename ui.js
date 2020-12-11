@@ -17,14 +17,17 @@ const quotes = [
     'There are no secrets to success. It is the result of preparation, hard work, and learning from failure.',
     'If you are not willing to risk the usual, you will have to settle for the ordinary.'
 ]
-const randomNum = Math.floor(Math.random()*10 + 1)
+
+randomNum = Math.floor(Math.random()*10 + 1)
+    
+
 
 //Main Event
 document.addEventListener('DOMContentLoaded',()=>{
     getWeather()
     showDateAndTime()
     getRandomQuote()
-    console.log(randomNum)
+    
     if(randomNum === 1){
         backGround.style.backgroundImage = "url('./backgroundimages/bg1.jpg')"
     }else if(randomNum === 2){
@@ -86,8 +89,8 @@ function checkDate(){
     "July", "August", "September", "October", "November", "December"];
     const dateObject = new Date();
     const month = monthNames[dateObject.getMonth()];
-    const day = String(dateObj.getDate()).padStart(2, '0');
-    const year = dateObj.getFullYear();
+    const day = String(dateObject.getDate()).padStart(2, '0');
+    const year = dateObject.getFullYear();
     const output = month  + '\n'+ day  + '\n' + year;
     document.getElementById('date').textContent = output; 
     

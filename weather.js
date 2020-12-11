@@ -16,9 +16,9 @@ function capitalizeFirstLetter(string) {
 async function getWeather() {
     //Change city 
     let city = 'Bremen'
-    let apiKey  //Enter your api key
+    let apiKey //'Your API Key'
     const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
-            
+    document.getElementById('city').textContent = `${city}`        
     const responseData = await response.json()
         .then(data =>{
         console.log(data)
